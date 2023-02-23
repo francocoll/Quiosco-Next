@@ -1,11 +1,11 @@
-
-import { Inter } from '@next/font/google'
-
-
-const inter = Inter({ subsets: ['latin'] })
+import Layout from '../layout/Layout';
 
 export default function Home() {
-  return (
-  <h1>hola</h1>
-  )
+
+	return (
+		<Layout >
+			<h1>inicio</h1>
+			
+		</Layout>
+	);
 }
