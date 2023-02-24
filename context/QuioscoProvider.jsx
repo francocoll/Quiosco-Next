@@ -34,6 +34,13 @@ const QuioscoProvider = ({ children }) => {
         setCategoriaActual(categorias[0])
     }, [categorias])
 
+    useEffect(() => {
+        const nuevoTotal = pedido.reduce((total, producto) => (producto.precio * producto.cantidad) + total, 0)
+
+        setTotal(nuevoTotal)
+    }, [pedido])
+
+
     const handleclickCategoria = id => {
         const categoria = categorias.filter(cat => cat.id === id)
         setCategoriaActual(categoria[0])
@@ -92,7 +99,8 @@ const QuioscoProvider = ({ children }) => {
                 handleEliminarProducto,
                 nombre,
                 setNombre,
-                colocarOrden
+                colocarOrden,
+                total
             }}>
             {children}
         </QuioscoContext.Provider>
