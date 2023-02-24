@@ -7,6 +7,17 @@ const pasos = [
 ]
 
 const Pasos = () => {
+    const calcularPorcentaje = () => {
+        let valor
+        if (router.pathname === '/') {
+            valor = 2
+        } else if (router.pathname === '/resumen') {
+            valor = 50
+        } else {
+            valor = 100
+        }
+        return valor
+    }
 
     const router = useRouter()
     return (
@@ -17,6 +28,11 @@ const Pasos = () => {
                         {paso.nombre}
                     </button>
                 ))}
+            </div>
+            <div className='bg-gray-100 mb-10'>
+                <div className='rounded-full bg-amber-500 text-xs leading-none h-2 text-center text-white'
+                    style={{ width: `${calcularPorcentaje()}%` }}>
+                </div>
             </div>
         </>
     )

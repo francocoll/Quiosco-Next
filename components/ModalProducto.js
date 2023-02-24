@@ -17,13 +17,6 @@ const ModalProducto = () => {
         }
     }, [producto, pedido])
 
-    //comprobar si esta en el pedido
-    if (pedido.some((pedidoState) => pedidoState.id === producto.id)) {
-        setEdicion(true)
-    } else {
-        console.log('no existe')
-    }
-
     return (
         <div className='md:flex gap-10'>
             <div className='md:w-1/3'>
