@@ -16,8 +16,8 @@ const ResumenProducto = ({ producto }) => {
             </div>
             <div className='md:w-4/6'>
                 <p className='text-3xl font-bold'>{producto.nombre}</p>
-                <p className='text-xl font-bold mt-2'>Cantidad: {producto.cantidad}</p>
-                <p className='text-xl font-bold mt-2 text-amber-500'>Precio: {formatearDinero(producto.precio)}</p>
+                <p className='text-xl font-bold mt-2'>Quantity: {producto.cantidad}</p>
+                <p className='text-xl font-bold mt-2 text-amber-500'>Price: {formatearDinero(producto.precio)}</p>
                 <p className='text-sm text-gray-700 mt-2 '>Subtotal: {formatearDinero(producto.precio * producto.cantidad)}</p>
             </div>
             <div>

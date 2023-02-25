@@ -35,7 +35,7 @@ export default function Total() {
                     />
                     <div className="mt-10">
                         <p className="text-2xl">
-                            Total a pagar: {""}{" "}
+                            Total: {""}{" "}
                             <span className="font-bold">{formatearDinero(total)}</span>
                         </p>
                     </div>
@@ -44,7 +44,7 @@ export default function Total() {
                             type='submit'
                             value='Confirm order'
                             disabled={comprobarPedido()}
-                            className={`${comprobarPedido() ? 'bg-indigo-100' : 'bg-indigo-600 hover:bg-indigo-800'} text-center w-full lg:w-auto px-5 py-2 rounded uppercase font-bold text-white`} />
+                            className={`${comprobarPedido() ? 'bg-indigo-100' : 'bg-indigo-600 hover:bg-indigo-800'} text-center w-full lg:w-auto px-5 py-2 mt-3 rounded uppercase font-bold text-white`} />
                     </div>
                 </div>
             </form>

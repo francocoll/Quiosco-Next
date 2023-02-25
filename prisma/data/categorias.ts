@@ -5,7 +5,7 @@ const categorias = [
       },
       {
         icono: "hamburguesa",
-        nombre: "Hamburguesas"
+        nombre: "Burgers"
       },
       {
         icono: "pizza",
@@ -13,15 +13,15 @@ const categorias = [
       },
       {
         icono: "dona",
-        nombre: "Donas"
+        nombre: "Donuts"
       },
       {
         icono: "pastel",
-        nombre: "Pasteles"
+        nombre: "Cakes"
       },
       {
         icono: "galletas",
-        nombre: "Galletas"
+        nombre: "Cookies"
       }
 ]
 
